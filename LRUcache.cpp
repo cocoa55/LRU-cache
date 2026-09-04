@@ -54,8 +54,8 @@ public:
     auto remove = _map.find(key);
 
     if (remove != _map.end()) {
-      _cache.erase(remove->second); //
-      _map.erase(remove);           // remove the ma
+      _cache.erase(remove->second); 
+      _map.erase(remove);           
       return true;
     }
     return false;
